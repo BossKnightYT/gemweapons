@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "gemweapons",
+  "version": "${version}",
+
+  "name": "Gem Weapons",
+  "description": "we! are the crystal gems!",
+  "authors": [
+    "BossKnight"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC BY-NC-SA 4.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.wilson.gemweapons.GemWeapons"
+    ],
+    "client": [
+      "net.wilson.gemweapons.GemWeaponsClient"
+    ]
+  },
+  "mixins": [
+    "gemweapons.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
