@@ -1,6 +1,7 @@
 package net.wilson.gemweapons;
 
 import net.fabricmc.api.ModInitializer;
+import net.wilson.gemweapons.item.Moditems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,5 +12,6 @@ public class GemWeapons implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		Moditems.registerModitems();
 	}
 }
