@@ -1,6 +1,21 @@
 {
   "item.gemweapons.ruby": "Ruby",
   "item.gemweapons.pink_aura": "Pink Aura",
+  "item.gemweapons.yellow_aura": "Yellow Aura",
+  "item.gemweapons.blue_aura": "Blue Aura",
+  "item.gemweapons.white_aura": "White Aura",
+  "item.gemweapons.amethyst_battleaxe": "Amethyst Battleaxe",
+  "item.gemweapons.rejuvenator": "Rejuvenator",
+  "item.gemweapons.destabalizer": "Destabalizer",
+  "item.gemweapons.p_gemshards": "Pink Gem Shards",
+  "item.gemweapons.glued_p_gemshards": "Glued Pink Gemshards",
+  "item.gemweapons.y_gemshards": "Yellow Gem Shards",
+  "item.gemweapons.glued_y_gemshards": "Glued Yellow Gemshards",
 
-  "itemGroup.gemweapons.ruby": "Gem Weapons"
+  "itemGroup.gemweapons.ruby": "Gem Weapons",
+
+  "tooltip.gemweapons.rejuvenator": "It's horrifc what you did to that gem...",
+  "tooltip.gemweapons.aura": "The aura of a diamond. a powerful thing...",
+  "tooltip.gemweapons.destabalizer": "a weapon of destruction... in small quanities",
+  "tooltip.gemweapons.amethbattleaxe": "a lethal weapon, for a lethal warrior."
 }

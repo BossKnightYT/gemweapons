@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "gemweapons:y_gemshards"
+    },
+    {
+      "item": "gemweapons:y_gemshards"
+    },
+    {
+      "item": "gemweapons:y_gemshards"
+    },
+    {
+      "item": "gemweapons:yellow_aura"
+    }
+  ],
+  "result": {
+    "item": "gemweapons:glued_y_gemshards"
+  }
+}

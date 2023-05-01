@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #g",
+    " I#",
+    "n  "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_nugget"
+    },
+    "g": {
+      "item": "gemweapons:glued_p_gemshards"
+    },
+    "I": {
+      "item": "minecraft:iron_bars"
+    },
+    "n": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "gemweapons:rejuvenator"
+  }
+}
