@@ -1,0 +1,136 @@
+{
+	"credit": "Made by BossK",
+	"gui_light": "front",
+	"textures": {
+		"1": "gemweapons:item/ruby_axe",
+		"particle": "gemweapons:item/ruby_axe"
+	},
+	"elements": [
+		{
+			"name": "bottom",
+			"from": [7, 2.5, 15],
+			"to": [9, 4.5, 16],
+			"rotation": {"angle": 0, "axis": "x", "origin": [6, 5, 8]},
+			"faces": {
+				"north": {"uv": [3, 5, 4, 6], "texture": "#1"},
+				"east": {"uv": [2.5, 5, 3, 6], "texture": "#1"},
+				"south": {"uv": [4.5, 5, 5.5, 6], "texture": "#1"},
+				"west": {"uv": [4, 5, 4.5, 6], "texture": "#1"},
+				"up": {"uv": [4, 5, 3, 4.5], "texture": "#1"},
+				"down": {"uv": [5, 4.5, 4, 5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Handle",
+			"from": [7.5, 3, 4],
+			"to": [8.5, 4, 15],
+			"rotation": {"angle": 0, "axis": "x", "origin": [6, 5, 8]},
+			"faces": {
+				"north": {"uv": [8.5, 7, 9, 7.5], "texture": "#1"},
+				"east": {"uv": [3, 7, 8.5, 7.5], "texture": "#1"},
+				"south": {"uv": [14.5, 7, 15, 7.5], "texture": "#1"},
+				"west": {"uv": [9, 7, 14.5, 7.5], "texture": "#1"},
+				"up": {"uv": [9, 7, 8.5, 1.5], "texture": "#1"},
+				"down": {"uv": [9.5, 1.5, 9, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "bladebase",
+			"from": [7.5, 1, 4.5],
+			"to": [8.5, 3, 7.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [6, 5, 8]},
+			"faces": {
+				"north": {"uv": [1.5, 6, 2, 7], "texture": "#1"},
+				"east": {"uv": [0, 6, 1.5, 7], "texture": "#1"},
+				"south": {"uv": [3.5, 6, 4, 7], "texture": "#1"},
+				"west": {"uv": [2, 6, 3.5, 7], "texture": "#1"},
+				"up": {"uv": [2, 6, 1.5, 4.5], "texture": "#1"},
+				"down": {"uv": [2.5, 4.5, 2, 6], "texture": "#1"}
+			}
+		},
+		{
+			"name": "bladebase",
+			"from": [7.5, 4, 4.5],
+			"to": [8.5, 5, 6.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [6, 5, 8]},
+			"faces": {
+				"north": {"uv": [1, 3.5, 1.5, 4], "texture": "#1"},
+				"east": {"uv": [0, 3.5, 1, 4], "texture": "#1"},
+				"south": {"uv": [2.5, 3.5, 3, 4], "texture": "#1"},
+				"west": {"uv": [1.5, 3.5, 2.5, 4], "texture": "#1"},
+				"up": {"uv": [1.5, 3.5, 1, 2.5], "texture": "#1"},
+				"down": {"uv": [2, 2.5, 1.5, 3.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "sharp",
+			"from": [8, 0, 4.5],
+			"to": [8, 1, 8.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [6, 5, 8]},
+			"faces": {
+				"north": {"uv": [2, 2, 2, 2.5], "texture": "#1"},
+				"east": {"uv": [0, 2, 2, 2.5], "texture": "#1"},
+				"south": {"uv": [4, 2, 4, 2.5], "texture": "#1"},
+				"west": {"uv": [2, 2, 4, 2.5], "texture": "#1"},
+				"up": {"uv": [2, 2, 2, 0], "texture": "#1"},
+				"down": {"uv": [2, 0, 2, 2], "texture": "#1"}
+			}
+		},
+		{
+			"name": "hilt",
+			"from": [7, 2.5, 3],
+			"to": [9, 4.5, 4],
+			"rotation": {"angle": 0, "axis": "x", "origin": [6, 5, 8]},
+			"faces": {
+				"north": {"uv": [0.5, 0.5, 1.5, 1.5], "texture": "#1"},
+				"east": {"uv": [0, 0.5, 0.5, 1.5], "texture": "#1"},
+				"south": {"uv": [2, 0.5, 3, 1.5], "texture": "#1"},
+				"west": {"uv": [1.5, 0.5, 2, 1.5], "texture": "#1"},
+				"up": {"uv": [1.5, 0.5, 0.5, 0], "texture": "#1"},
+				"down": {"uv": [2.5, 0, 1.5, 0.5], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 0, 0],
+			"translation": [0, 3, 6.25]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [90, 0, 0],
+			"translation": [0, 3, 6.25]
+		},
+		"firstperson_righthand": {
+			"rotation": [80, 0, -16],
+			"translation": [1.75, 5.25, 4.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [80, 0, -16],
+			"translation": [1.75, 5.25, 4.5]
+		},
+		"ground": {
+			"rotation": [20, 0, 89],
+			"translation": [-4.75, 0.75, -0.5]
+		},
+		"gui": {
+			"rotation": [73, -32, -100],
+			"translation": [4.75, -1.5, 0]
+		},
+		"head": {
+			"rotation": [-160, 0, 180],
+			"translation": [0, 13, -5.25]
+		},
+		"fixed": {
+			"rotation": [90, 0, -90],
+			"translation": [4.25, 0, 0]
+		}
+	},
+	"groups": [
+		{
+			"name": "ShortAxe",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5]
+		}
+	]
+}

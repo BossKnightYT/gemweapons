@@ -1,0 +1,111 @@
+{
+	"parent": "builtin/entity",
+	"credit": "Made by BossK",
+	"gui_light": "front",
+	"textures": {
+		"9": "gemweapons:item/ruby_shield",
+		"particle": "gemweapons:item/ruby_shield"
+	},
+	"elements": [
+		{
+			"from": [9, 2, 4],
+			"to": [11, 6, 12],
+			"rotation": {"angle": 0, "axis": "z", "origin": [9.5, 4, 9.75]},
+			"faces": {
+				"north": {"uv": [4, 4, 5, 6], "texture": "#9"},
+				"east": {"uv": [0, 4, 4, 6], "texture": "#9"},
+				"south": {"uv": [9, 4, 10, 6], "texture": "#9"},
+				"west": {"uv": [5, 4, 9, 6], "texture": "#9"},
+				"up": {"uv": [5, 4, 4, 0], "texture": "#9"},
+				"down": {"uv": [6, 0, 5, 4], "texture": "#9"}
+			}
+		},
+		{
+			"from": [9, 3, 12],
+			"to": [11, 5, 14],
+			"rotation": {"angle": 0, "axis": "z", "origin": [9.5, 4, 9.75]},
+			"faces": {
+				"north": {"uv": [1, 1, 2, 2], "texture": "#9"},
+				"east": {"uv": [0, 1, 1, 2], "texture": "#9"},
+				"south": {"uv": [3, 1, 4, 2], "texture": "#9"},
+				"west": {"uv": [2, 1, 3, 2], "texture": "#9"},
+				"up": {"uv": [2, 1, 1, 0], "texture": "#9"},
+				"down": {"uv": [3, 0, 2, 1], "texture": "#9"}
+			}
+		},
+		{
+			"from": [8, 6, 3],
+			"to": [10, 8, 10],
+			"rotation": {"angle": 0, "axis": "z", "origin": [9.5, 4, 9.75]},
+			"faces": {
+				"north": {"uv": [3.5, 9.5, 4.5, 10.5], "texture": "#9"},
+				"east": {"uv": [0, 9.5, 3.5, 10.5], "texture": "#9"},
+				"south": {"uv": [8, 9.5, 9, 10.5], "texture": "#9"},
+				"west": {"uv": [4.5, 9.5, 8, 10.5], "texture": "#9"},
+				"up": {"uv": [4.5, 9.5, 3.5, 6], "texture": "#9"},
+				"down": {"uv": [5.5, 6, 4.5, 9.5], "texture": "#9"}
+			}
+		},
+		{
+			"from": [8, 0, 3],
+			"to": [10, 2, 10],
+			"rotation": {"angle": 0, "axis": "z", "origin": [9.5, 4, 9.75]},
+			"faces": {
+				"north": {"uv": [9, 10.5, 10, 11.5], "texture": "#9"},
+				"east": {"uv": [5.5, 10.5, 9, 11.5], "texture": "#9"},
+				"south": {"uv": [13.5, 10.5, 14.5, 11.5], "texture": "#9"},
+				"west": {"uv": [10, 10.5, 13.5, 11.5], "texture": "#9"},
+				"up": {"uv": [10, 10.5, 9, 7], "texture": "#9"},
+				"down": {"uv": [11, 7, 10, 10.5], "texture": "#9"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 0, 0],
+			"translation": [2, -2.25, 6]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [90, 0, 180],
+			"translation": [2, -2.25, -2]
+		},
+		"firstperson_righthand": {
+			"rotation": [90, 0, -77],
+			"translation": [2.25, 1.5, 3.25]
+		},
+		"firstperson_lefthand": {
+			"rotation": [90, 0, 107],
+			"translation": [-5, 1.5, 1]
+		},
+		"ground": {
+			"rotation": [0, 0, 67]
+		},
+		"gui": {
+			"rotation": [88, -19, 113],
+			"translation": [-4, 1.25, 0],
+			"scale": [1.3, 1.3, 1.3]
+		},
+		"head": {
+			"rotation": [90, 0, -90],
+			"translation": [4, 0, -6.5]
+		},
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 3.25, 0]
+		}
+	},
+	"groups": [
+		{
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		},
+
+		{
+			"predicate": {
+				"blocking": 1
+			},
+			"model": "gemweapons:item/ruby_shield_blocking"
+		}]}
+
+

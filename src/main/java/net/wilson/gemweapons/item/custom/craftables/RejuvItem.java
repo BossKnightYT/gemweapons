@@ -1,7 +1,7 @@
 /*
  * Decompiled with CFR 0.2.0 (FabricMC d28b102d).
  */
-package net.wilson.gemweapons.item.custom;
+package net.wilson.gemweapons.item.custom.craftables;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
@@ -15,12 +15,15 @@ import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.Vanishable;
 import net.minecraft.tag.BlockTags;
+import net.minecraft.text.LiteralTextContent;
 import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableTextContent;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -28,13 +31,13 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class DesItem
+public class RejuvItem
         extends ToolItem
         implements Vanishable {
     private final float attackDamage;
     private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
 
-    public DesItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+    public RejuvItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Item.Settings settings) {
         super(toolMaterial, settings);
         this.attackDamage = (float)attackDamage + toolMaterial.getAttackDamage();
         ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
@@ -80,7 +83,8 @@ public class DesItem
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.gemweapons.destabalizer").formatted(Formatting.YELLOW));
+        tooltip.add(Text.translatable("tooltip.gemweapons.rejuvenator").formatted(Formatting.LIGHT_PURPLE));
+
         super.appendTooltip(stack, world, tooltip, context);
     }
 
@@ -97,4 +101,3 @@ public class DesItem
         return super.getAttributeModifiers(slot);
     }
 }
-

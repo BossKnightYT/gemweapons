@@ -1,7 +1,7 @@
 /*
  * Decompiled with CFR 0.2.0 (FabricMC d28b102d).
  */
-package net.wilson.gemweapons.item.custom;
+package net.wilson.gemweapons.item.custom.amethyst;
 
 import com.google.common.collect.ImmutableMap;
 
@@ -33,7 +33,7 @@ public class AmethBattleaxeItem
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.gemweapons.destabalizer").formatted(Formatting.DARK_PURPLE));
+        tooltip.add(Text.translatable("tooltip.gemweapons.amethbattleaxe").formatted(Formatting.DARK_PURPLE));
         super.appendTooltip(stack, world, tooltip, context);
     }
 

@@ -1,11 +1,12 @@
 /*
  * Decompiled with CFR 0.2.0 (FabricMC d28b102d).
  */
-package net.wilson.gemweapons.item.custom;
+package net.wilson.gemweapons.item.custom.craftingitems;
 
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
@@ -27,7 +28,7 @@ public class AuraItem
         extends Item {
 
     public AuraItem(Item.Settings settings) {
-        super(settings);
+        super(settings.maxCount(16));
     }
 
     @Override
@@ -38,16 +39,18 @@ public class AuraItem
             serverPlayerEntity.incrementStat(Stats.USED.getOrCreateStat(this));
         }
         if (!world.isClient) {
-            user.removeStatusEffect(StatusEffects.POISON);
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200));
         }
-        if (stack.isEmpty()) {
-            return new ItemStack(Items.GLASS_BOTTLE);
-        }
-        if (user instanceof PlayerEntity playerEntity && !((PlayerEntity)user).getAbilities().creativeMode) {
-            ItemStack itemStack = new ItemStack(Items.GLASS_BOTTLE);
-            if (!playerEntity.getInventory().insertStack(itemStack)) {
-                playerEntity.dropItem(itemStack, false);
+        if (stack.getCount() > 1) {
+            stack.decrement(1);
+            if (user instanceof PlayerEntity playerEntity && !((PlayerEntity) user).getAbilities().creativeMode) {
+                ItemStack itemStack = new ItemStack(Items.GLASS_BOTTLE);
+                if (!playerEntity.getInventory().insertStack(itemStack)) {
+                    playerEntity.dropItem(itemStack, false);
+                }
             }
+        } else {
+            return new ItemStack(Items.GLASS_BOTTLE);
         }
         return stack;
     }
@@ -78,12 +81,8 @@ public class AuraItem
         super.appendTooltip(stack, world, tooltip, context);
     }
 
-
-
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         return ItemUsage.consumeHeldItem(world, user, hand);
-
     }
 }
-

@@ -1,0 +1,77 @@
+{
+	"credit": "Made by BossK",
+	"texture_size": [64, 64],
+	"gui_light": "front",
+	"textures": {
+		"6": "gemweapons:item/amethyst_shield",
+		"particle": "gemweapons:item/amethyst_shield"
+	},
+	"elements": [
+		{
+			"from": [8, 8, -6],
+			"to": [10, 20, 6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.75, 14, 0]},
+			"faces": {
+				"north": {"uv": [7, 6.5, 7.5, 9.5], "texture": "#6"},
+				"east": {"uv": [4, 6.5, 7, 9.5], "texture": "#6"},
+				"south": {"uv": [10.5, 6.5, 11, 9.5], "texture": "#6"},
+				"west": {"uv": [7.5, 6.5, 10.5, 9.5], "texture": "#6"},
+				"up": {"uv": [7.5, 6.5, 7, 3.5], "texture": "#6"},
+				"down": {"uv": [8, 3.5, 7.5, 6.5], "texture": "#6"}
+			}
+		},
+		{
+			"from": [8, 7.5, -6.5],
+			"to": [9, 20.5, 6.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.75, 14, 0]},
+			"faces": {
+				"north": {"uv": [3.25, 3.25, 3.5, 6.5], "texture": "#6"},
+				"east": {"uv": [0, 3.25, 3.25, 6.5], "texture": "#6"},
+				"south": {"uv": [6.75, 3.25, 7, 6.5], "texture": "#6"},
+				"west": {"uv": [3.5, 3.25, 6.75, 6.5], "texture": "#6"},
+				"up": {"uv": [3.5, 3.25, 3.25, 0], "texture": "#6"},
+				"down": {"uv": [3.75, 0, 3.5, 3.25], "texture": "#6"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [2.25, -7.75, 9.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 180, 0],
+			"translation": [2.25, -7.75, -5.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [9, 75, 0],
+			"translation": [7.25, -7.5, 2.75]
+		},
+		"firstperson_lefthand": {
+			"rotation": [9, -93, 0],
+			"translation": [-7.25, -7, -2.25]
+		},
+		"ground": {
+			"rotation": [-7, 0, 87],
+			"translation": [5.5, 0, 7.75]
+		},
+		"gui": {
+			"rotation": [-4, -103, 3],
+			"translation": [-7.75, -6.25, 0]
+		},
+		"head": {
+			"rotation": [-17, 0, 35]
+		},
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"translation": [7.5, -6.25, 0.75]
+		}
+	},
+	"groups": [
+		{
+			"name": "Shield",
+			"origin": [5, 22, 0],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}
